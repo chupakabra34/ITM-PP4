@@ -21,7 +21,6 @@ public abstract class BaseIntegrationTest {
             .configure(SerializationFeature.WRAP_ROOT_VALUE, false)
             .writer()
             .withDefaultPrettyPrinter();
-
     @Autowired
     protected MockMvc mvc;
 

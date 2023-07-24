@@ -1,9 +1,13 @@
 package com.itm.space.backendresources.api.response;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
+@NoArgsConstructor(force = true)
+@AllArgsConstructor
 @Data
 public class UserResponse {
     private final String firstName;

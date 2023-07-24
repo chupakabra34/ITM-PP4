@@ -3,9 +3,13 @@ package com.itm.space.backendresources.api.request;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor(force = true)
+@AllArgsConstructor
 public class UserRequest {
     @NotBlank(message = "Username should not be blank")
     @Size(min = 2, max = 30, message = "Username should be between 2 and 30 characters long")
